@@ -9,3 +9,7 @@
 ## [course](https://www.udemy.com/course/mastering-mvvm-for-ios/)
 
 ## [Flat UI Colors](https://flatuicolors.com/)
+
+## [Open Weather](https://openweathermap.org/)
+
+## [Dark Sky API](https://darksky.net/dev)

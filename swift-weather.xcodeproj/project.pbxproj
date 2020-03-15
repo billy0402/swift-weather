@@ -15,6 +15,7 @@
 		CE631EA8241DC37D00E11A70 /* WeatherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE631EA7241DC37D00E11A70 /* WeatherListTableViewController.swift */; };
 		CE631EAA241DC3EA00E11A70 /* AddWeatherCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE631EA9241DC3EA00E11A70 /* AddWeatherCityViewController.swift */; };
 		CE631EAE241DCDD100E11A70 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE631EAD241DCDD100E11A70 /* WeatherCell.swift */; };
+		CE631EB1241E8D5C00E11A70 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE631EB0241E8D5C00E11A70 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CE631EA7241DC37D00E11A70 /* WeatherListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListTableViewController.swift; sourceTree = "<group>"; };
 		CE631EA9241DC3EA00E11A70 /* AddWeatherCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherCityViewController.swift; sourceTree = "<group>"; };
 		CE631EAD241DCDD100E11A70 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		CE631EB0241E8D5C00E11A70 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		CE631E8E241DBF7400E11A70 /* swift-weather */ = {
 			isa = PBXGroup;
 			children = (
+				CE631EAF241E8D4700E11A70 /* Services */,
 				CE631EAC241DCDA600E11A70 /* Cells */,
 				CE631EA6241DC35000E11A70 /* Controllers */,
 				CE631E8F241DBF7400E11A70 /* AppDelegate.swift */,
@@ -91,6 +94,14 @@
 				CE631EAD241DCDD100E11A70 /* WeatherCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE631EAF241E8D4700E11A70 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE631EB0241E8D5C00E11A70 /* WebService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE631EB1241E8D5C00E11A70 /* WebService.swift in Sources */,
 				CE631EA8241DC37D00E11A70 /* WeatherListTableViewController.swift in Sources */,
 				CE631E90241DBF7400E11A70 /* AppDelegate.swift in Sources */,
 				CE631EAE241DCDD100E11A70 /* WeatherCell.swift in Sources */,
