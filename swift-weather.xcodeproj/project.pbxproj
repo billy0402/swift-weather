@@ -24,6 +24,8 @@
 		CE631E98241DBF7500E11A70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE631E9B241DBF7500E11A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE631E9D241DBF7500E11A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE631EA4241DBFAC00E11A70 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CE631EA5241DBFED00E11A70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,8 @@
 			children = (
 				CE631E8E241DBF7400E11A70 /* swift-weather */,
 				CE631E8D241DBF7400E11A70 /* Products */,
+				CE631EA4241DBFAC00E11A70 /* .gitignore */,
+				CE631EA5241DBFED00E11A70 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
