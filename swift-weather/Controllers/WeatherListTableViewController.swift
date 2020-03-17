@@ -9,18 +9,13 @@
 import Foundation
 import UIKit
 
-class WeatherListTableViewController: UITableViewController, AddWeatherDelegate {
+class WeatherListTableViewController: UITableViewController {
 
     private var weatherListViewModel = WeatherListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
-    }
-    
-    func addWeatherDidSave(vm: WeatherViewModel) {
-        self.weatherListViewModel.addWeatherViewModel(vm)
-        self.tableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -66,7 +61,32 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
     }
     
     private func prepareSegueForSettingsTableViewController(segue: UIStoryboardSegue) {
+        guard let nav = segue.destination as? UINavigationController else {
+            fatalError("NavigationController not found")
+        }
         
+        guard let settingsTVC = nav.viewControllers.first as? SettingsTableViewController else {
+            fatalError("SettingsTableViewController not found")
+        }
+        
+        settingsTVC.delegate = self
+    }
+
+}
+
+extension WeatherListTableViewController: AddWeatherDelegate {
+
+    func addWeatherDidSave(vm: WeatherViewModel) {
+        self.weatherListViewModel.addWeatherViewModel(vm)
+        self.tableView.reloadData()
+    }
+
+}
+
+extension WeatherListTableViewController: SettingsDelegate {
+
+    func settingsDone(vm: SettingsViewModel) {
+        print("Settings Done")
     }
 
 }
