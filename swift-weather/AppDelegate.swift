@@ -24,7 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIBarButtonItem.appearance().tintColor = UIColor.white
         
+        self.setupDefaultSettings()
+        
         return true
+    }
+    
+    private func setupDefaultSettings() {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(Unit.celsius.rawValue, forKey: "unit")
     }
 
     // MARK: UISceneSession Lifecycle
