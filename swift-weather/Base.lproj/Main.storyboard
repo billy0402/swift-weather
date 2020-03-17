@@ -97,26 +97,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tbq-kp-Lf5">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tbq-kp-Lf5">
                                 <rect key="frame" x="16" y="88" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MEP-ph-Oc6">
+                                <rect key="frame" x="16" y="130" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pL1-Kh-Z5d">
-                                <rect key="frame" x="190" y="138" width="34" height="30"/>
+                                <rect key="frame" x="190" y="222" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveCityButtonPressed" destination="gyG-tg-iUU" eventType="touchUpInside" id="h0W-65-DRL"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFX-JK-Ogc">
+                                <rect key="frame" x="16" y="172" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3Cb-tF-unk" firstAttribute="trailing" secondItem="tbq-kp-Lf5" secondAttribute="trailing" constant="16" id="6WE-4i-f7q"/>
-                            <constraint firstItem="pL1-Kh-Z5d" firstAttribute="top" secondItem="tbq-kp-Lf5" secondAttribute="bottom" constant="16" id="ECJ-YS-uce"/>
+                            <constraint firstItem="SFX-JK-Ogc" firstAttribute="leading" secondItem="3Cb-tF-unk" secondAttribute="leading" constant="16" id="EcS-J7-pN4"/>
+                            <constraint firstItem="pL1-Kh-Z5d" firstAttribute="top" secondItem="SFX-JK-Ogc" secondAttribute="bottom" constant="16" id="G7r-4l-fzd"/>
+                            <constraint firstItem="3Cb-tF-unk" firstAttribute="trailing" secondItem="SFX-JK-Ogc" secondAttribute="trailing" constant="16" id="MZU-CN-R2i"/>
                             <constraint firstItem="tbq-kp-Lf5" firstAttribute="leading" secondItem="3Cb-tF-unk" secondAttribute="leading" constant="16" id="QOa-3b-lbK"/>
+                            <constraint firstItem="SFX-JK-Ogc" firstAttribute="top" secondItem="MEP-ph-Oc6" secondAttribute="bottom" constant="8" id="Xn1-Q1-qVc"/>
+                            <constraint firstItem="MEP-ph-Oc6" firstAttribute="leading" secondItem="3Cb-tF-unk" secondAttribute="leading" constant="16" id="dbS-5i-v8B"/>
                             <constraint firstItem="tbq-kp-Lf5" firstAttribute="top" secondItem="3Cb-tF-unk" secondAttribute="top" constant="32" id="e8C-9w-CkA"/>
                             <constraint firstItem="pL1-Kh-Z5d" firstAttribute="centerX" secondItem="3Cb-tF-unk" secondAttribute="centerX" id="em6-xw-9lU"/>
+                            <constraint firstItem="3Cb-tF-unk" firstAttribute="trailing" secondItem="MEP-ph-Oc6" secondAttribute="trailing" constant="16" id="kXL-xO-vT7"/>
+                            <constraint firstItem="MEP-ph-Oc6" firstAttribute="top" secondItem="tbq-kp-Lf5" secondAttribute="bottom" constant="8" id="kxv-5s-Rgs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Cb-tF-unk"/>
                     </view>
@@ -129,6 +145,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityNameTextField" destination="tbq-kp-Lf5" id="h3B-2m-tp3"/>
+                        <outlet property="stateTextField" destination="MEP-ph-Oc6" id="owe-pN-y19"/>
+                        <outlet property="zipCodeTextField" destination="SFX-JK-Ogc" id="7mG-pl-3WR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFb-Y3-Jpk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -18,6 +18,8 @@ class AddWeatherCityViewController: UIViewController {
     var delegate: AddWeatherDelegate?
 
     @IBOutlet weak var cityNameTextField: UITextField!
+    @IBOutlet weak var stateTextField: UITextField!
+    @IBOutlet weak var zipCodeTextField: UITextField!
     
     @IBAction func saveCityButtonPressed() {
         if let city = cityNameTextField.text {
