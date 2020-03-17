@@ -18,6 +18,10 @@ class SettingsTableViewController: UITableViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    @IBAction func done() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -34,6 +38,18 @@ class SettingsTableViewController: UITableViewController {
         cell.textLabel?.text = settingsItem.displayName
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            cell.accessoryType = .checkmark
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            cell.accessoryType = .none
+        }
     }
 
 }
