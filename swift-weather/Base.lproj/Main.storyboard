@@ -57,12 +57,12 @@
                     <navigationItem key="navigationItem" title="GoodWeather" id="EXJ-8J-LFb">
                         <barButtonItem key="leftBarButtonItem" title="Settings" image="Gear" id="tG1-3O-DMR">
                             <connections>
-                                <segue destination="RgA-pj-VfX" kind="presentation" id="22W-J4-0X3"/>
+                                <segue destination="RgA-pj-VfX" kind="presentation" identifier="SettingsTableViewController" id="22W-J4-0X3"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vn3-ye-wYn">
                             <connections>
-                                <segue destination="c3h-X0-UsU" kind="presentation" id="VjR-Zt-1pB"/>
+                                <segue destination="c3h-X0-UsU" kind="presentation" identifier="AddWeatherCityViewController" id="VjR-Zt-1pB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -156,7 +156,7 @@
         <!--Settings-->
         <scene sceneID="kzk-zO-uOS">
             <objects>
-                <tableViewController id="lzy-xk-wxP" sceneMemberID="viewController">
+                <tableViewController id="lzy-xk-wxP" customClass="SettingsTableViewController" customModule="swift_weather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4ka-8L-ufD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,7 +176,9 @@
                             <outlet property="delegate" destination="lzy-xk-wxP" id="ihe-RA-n8x"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="49N-7S-dBF"/>
+                    <navigationItem key="navigationItem" title="Settings" id="49N-7S-dBF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="49G-c1-Xbp"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aT3-xs-3pY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

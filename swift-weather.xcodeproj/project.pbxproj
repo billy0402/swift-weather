@@ -19,6 +19,7 @@
 		CE631EB4241E92A800E11A70 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE631EB3241E92A800E11A70 /* WeatherListViewModel.swift */; };
 		CE631EB6241E931100E11A70 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE631EB5241E931000E11A70 /* WeatherViewModel.swift */; };
 		CE631EBB241EA44E00E11A70 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE631EBA241EA44E00E11A70 /* Double+Extensions.swift */; };
+		CE631EBD241EAC4F00E11A70 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE631EBC241EAC4F00E11A70 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CE631EB3241E92A800E11A70 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		CE631EB5241E931000E11A70 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		CE631EBA241EA44E00E11A70 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		CE631EBC241EAC4F00E11A70 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				CE631EA7241DC37D00E11A70 /* WeatherListTableViewController.swift */,
 				CE631EA9241DC3EA00E11A70 /* AddWeatherCityViewController.swift */,
+				CE631EBC241EAC4F00E11A70 /* SettingsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				CE631EBB241EA44E00E11A70 /* Double+Extensions.swift in Sources */,
 				CE631EB4241E92A800E11A70 /* WeatherListViewModel.swift in Sources */,
 				CE631EAE241DCDD100E11A70 /* WeatherCell.swift in Sources */,
+				CE631EBD241EAC4F00E11A70 /* SettingsTableViewController.swift in Sources */,
 				CE631EB6241E931100E11A70 /* WeatherViewModel.swift in Sources */,
 				CE631EAA241DC3EA00E11A70 /* AddWeatherCityViewController.swift in Sources */,
 				CE631E92241DBF7400E11A70 /* SceneDelegate.swift in Sources */,
