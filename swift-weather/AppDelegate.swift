@@ -31,7 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupDefaultSettings() {
         let userDefaults = UserDefaults.standard
-        userDefaults.set(Unit.celsius.rawValue, forKey: "unit")
+        if userDefaults.value(forKey: "unit") == nil {
+            userDefaults.set(Unit.celsius.rawValue, forKey: "unit")
+        }
     }
 
     // MARK: UISceneSession Lifecycle
