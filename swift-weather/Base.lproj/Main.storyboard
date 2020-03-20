@@ -45,7 +45,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cityNameLabel" destination="d6q-Ci-Rug" id="2VC-qS-WAq"/>
-                                    <outlet property="temperatureNameLabel" destination="3io-gI-YWn" id="HFk-c4-9tB"/>
+                                    <outlet property="temperatureLabel" destination="3io-gI-YWn" id="HFk-c4-9tB"/>
                                     <segue destination="eg4-yQ-n2F" kind="show" identifier="WeatherDetailsViewController" id="HnZ-dF-jGi"/>
                                 </connections>
                             </tableViewCell>
