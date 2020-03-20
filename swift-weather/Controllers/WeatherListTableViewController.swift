@@ -12,14 +12,16 @@ import UIKit
 class WeatherListTableViewController: UITableViewController {
 
     private var weatherListViewModel = WeatherListViewModel()
-    private var dataSource: WeatherDataSource?
+    private var dataSource: TableViewDataSource<WeatherCell, WeatherViewModel>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
-        self.dataSource = WeatherDataSource(self.weatherListViewModel)
+        self.dataSource = TableViewDataSource(cellIdentifier: "WeatherCell", viewModels: self.weatherListViewModel.weatherViewModels) { cell, vm in
+            cell.configure(vm)
+        }
         self.tableView.dataSource = self.dataSource
     }
     
@@ -82,6 +84,7 @@ extension WeatherListTableViewController: AddWeatherDelegate {
 
     func addWeatherDidSave(vm: WeatherViewModel) {
         self.weatherListViewModel.addWeatherViewModel(vm)
+        self.dataSource.updateViewModels(self.weatherListViewModel.weatherViewModels)
         self.tableView.reloadData()
     }
 
