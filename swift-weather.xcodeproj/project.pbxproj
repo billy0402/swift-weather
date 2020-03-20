@@ -26,6 +26,7 @@
 		CE6354F42424E66700E114D0 /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F32424E66700E114D0 /* WeatherDetailsViewController.swift */; };
 		CE6354F72424ED1500E114D0 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F62424ED1500E114D0 /* Dynamic.swift */; };
 		CE6354FA2424F85100E114D0 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F92424F85100E114D0 /* WeatherDataSource.swift */; };
+		CE6354FC2425003800E114D0 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354FB2425003800E114D0 /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		CE6354F32424E66700E114D0 /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		CE6354F62424ED1500E114D0 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		CE6354F92424F85100E114D0 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
+		CE6354FB2425003800E114D0 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CE6354F92424F85100E114D0 /* WeatherDataSource.swift */,
+				CE6354FB2425003800E114D0 /* TableViewDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			files = (
 				CE631EB1241E8D5C00E11A70 /* WebService.swift in Sources */,
 				CE631EA8241DC37D00E11A70 /* WeatherListTableViewController.swift in Sources */,
+				CE6354FC2425003800E114D0 /* TableViewDataSource.swift in Sources */,
 				CE631E90241DBF7400E11A70 /* AppDelegate.swift in Sources */,
 				CE631EBB241EA44E00E11A70 /* Double+Extensions.swift in Sources */,
 				CE631EB4241E92A800E11A70 /* WeatherListViewModel.swift in Sources */,
