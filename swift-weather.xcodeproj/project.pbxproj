@@ -27,7 +27,7 @@
 		CE6354F72424ED1500E114D0 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F62424ED1500E114D0 /* Dynamic.swift */; };
 		CE6354FA2424F85100E114D0 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F92424F85100E114D0 /* WeatherDataSource.swift */; };
 		CE6354FC2425003800E114D0 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354FB2425003800E114D0 /* TableViewDataSource.swift */; };
-		CE63551524250E9600E114D0 /* SwiftWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63551424250E9600E114D0 /* SwiftWeatherTests.swift */; };
+		CE63551D24250F8B00E114D0 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63551C24250F8B00E114D0 /* SettingsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +66,8 @@
 		CE6354F92424F85100E114D0 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
 		CE6354FB2425003800E114D0 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		CE63551224250E9600E114D0 /* SwiftWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE63551424250E9600E114D0 /* SwiftWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWeatherTests.swift; sourceTree = "<group>"; };
 		CE63551624250E9600E114D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE63551C24250F8B00E114D0 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +203,7 @@
 		CE63551324250E9600E114D0 /* SwiftWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE63551424250E9600E114D0 /* SwiftWeatherTests.swift */,
+				CE63551C24250F8B00E114D0 /* SettingsViewModelTests.swift */,
 				CE63551624250E9600E114D0 /* Info.plist */,
 			);
 			path = SwiftWeatherTests;
@@ -334,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE63551524250E9600E114D0 /* SwiftWeatherTests.swift in Sources */,
+				CE63551D24250F8B00E114D0 /* SettingsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
