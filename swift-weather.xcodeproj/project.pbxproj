@@ -23,6 +23,7 @@
 		CE6354EB24211BDF00E114D0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354EA24211BDF00E114D0 /* SettingsViewModel.swift */; };
 		CE6354EF2421346A00E114D0 /* AddWeatherCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354EE2421346A00E114D0 /* AddWeatherCityViewModel.swift */; };
 		CE6354F22421353C00E114D0 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F12421353C00E114D0 /* BindingTextField.swift */; };
+		CE6354F42424E66700E114D0 /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F32424E66700E114D0 /* WeatherDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CE6354EA24211BDF00E114D0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		CE6354EE2421346A00E114D0 /* AddWeatherCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherCityViewModel.swift; sourceTree = "<group>"; };
 		CE6354F12421353C00E114D0 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
+		CE6354F32424E66700E114D0 /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CE631EA7241DC37D00E11A70 /* WeatherListTableViewController.swift */,
+				CE6354F32424E66700E114D0 /* WeatherDetailsViewController.swift */,
 				CE631EA9241DC3EA00E11A70 /* AddWeatherCityViewController.swift */,
 				CE631EBC241EAC4F00E11A70 /* SettingsTableViewController.swift */,
 			);
@@ -232,6 +235,7 @@
 				CE631EB6241E931100E11A70 /* WeatherViewModel.swift in Sources */,
 				CE6354EB24211BDF00E114D0 /* SettingsViewModel.swift in Sources */,
 				CE631EAA241DC3EA00E11A70 /* AddWeatherCityViewController.swift in Sources */,
+				CE6354F42424E66700E114D0 /* WeatherDetailsViewController.swift in Sources */,
 				CE631E92241DBF7400E11A70 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
