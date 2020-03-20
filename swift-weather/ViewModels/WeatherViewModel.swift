@@ -9,8 +9,8 @@
 import Foundation
 
 struct WeatherViewModel: Decodable {
-    let name: String
-    var currentTemperature: TemperatureViewModel
+    let name: Dynamic<String>
+    let currentTemperature: TemperatureViewModel
     
     private enum CodingKeys: String, CodingKey {
         case name
@@ -19,9 +19,9 @@ struct WeatherViewModel: Decodable {
 }
 
 struct TemperatureViewModel: Decodable {
-    var temperature: Double
-    let temperatureMin: Double
-    let temperatureMax: Double
+    let temperature: Dynamic<Double>
+    let temperatureMin: Dynamic<Double>
+    let temperatureMax: Dynamic<Double>
     
     private enum CodingKeys: String, CodingKey {
         case temperature = "temp"

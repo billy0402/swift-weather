@@ -24,6 +24,7 @@
 		CE6354EF2421346A00E114D0 /* AddWeatherCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354EE2421346A00E114D0 /* AddWeatherCityViewModel.swift */; };
 		CE6354F22421353C00E114D0 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F12421353C00E114D0 /* BindingTextField.swift */; };
 		CE6354F42424E66700E114D0 /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F32424E66700E114D0 /* WeatherDetailsViewController.swift */; };
+		CE6354F72424ED1500E114D0 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6354F62424ED1500E114D0 /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CE6354EE2421346A00E114D0 /* AddWeatherCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherCityViewModel.swift; sourceTree = "<group>"; };
 		CE6354F12421353C00E114D0 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 		CE6354F32424E66700E114D0 /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
+		CE6354F62424ED1500E114D0 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		CE631E8E241DBF7400E11A70 /* swift-weather */ = {
 			isa = PBXGroup;
 			children = (
+				CE6354F52424ECF400E114D0 /* TypeErasers */,
 				CE6354F02421351B00E114D0 /* Controls */,
 				CE631EB7241EA36900E11A70 /* Extensions */,
 				CE631EB2241E929200E11A70 /* ViewModels */,
@@ -150,6 +153,14 @@
 				CE6354F12421353C00E114D0 /* BindingTextField.swift */,
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		CE6354F52424ECF400E114D0 /* TypeErasers */ = {
+			isa = PBXGroup;
+			children = (
+				CE6354F62424ED1500E114D0 /* Dynamic.swift */,
+			);
+			path = TypeErasers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 				CE631EBB241EA44E00E11A70 /* Double+Extensions.swift in Sources */,
 				CE631EB4241E92A800E11A70 /* WeatherListViewModel.swift in Sources */,
 				CE631EAE241DCDD100E11A70 /* WeatherCell.swift in Sources */,
+				CE6354F72424ED1500E114D0 /* Dynamic.swift in Sources */,
 				CE6354EF2421346A00E114D0 /* AddWeatherCityViewModel.swift in Sources */,
 				CE6354F22421353C00E114D0 /* BindingTextField.swift in Sources */,
 				CE631EBD241EAC4F00E11A70 /* SettingsTableViewController.swift in Sources */,

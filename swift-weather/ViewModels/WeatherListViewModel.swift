@@ -26,16 +26,16 @@ struct WeatherListViewModel {
     
     mutating private func toCelsius() {
         self.weatherViewModels = self.weatherViewModels.map { vm in
-            var weatherViewModel = vm
-            weatherViewModel.currentTemperature.temperature = (weatherViewModel.currentTemperature.temperature - 32) * 5 / 9
+            let weatherViewModel = vm
+            weatherViewModel.currentTemperature.temperature.value = (weatherViewModel.currentTemperature.temperature.value - 32) * 5 / 9
             return weatherViewModel
         }
     }
     
     mutating private func toFahrenheit() {
         self.weatherViewModels = self.weatherViewModels.map { vm in
-            var weatherViewModel = vm
-            weatherViewModel.currentTemperature.temperature = (weatherViewModel.currentTemperature.temperature * 9 / 5) + 32
+            let weatherViewModel = vm
+            weatherViewModel.currentTemperature.temperature.value = (weatherViewModel.currentTemperature.temperature.value * 9 / 5) + 32
             return weatherViewModel
         }
     }
